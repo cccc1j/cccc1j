@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个用纯 HTML5 + CSS + JavaScript 构建的极简个人博客">
+  <title>我的博客 · 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">C1J<span class="logo-dot">.</span>blog</a>
+      <div class="nav-right">
+        <a href="index.html" class="nav-link active">首页</a>
+        <a href="about.html" class="nav-link">关于</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色/浅色主题">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>你好，我是 <span class="accent">C1J</span> 👋</h1>
+      <p class="hero-sub">记录技术、生活与思考的自留地。纯 HTML5 + CSS + JS，无框架、无构建。</p>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" class="search-input" type="search" placeholder="搜索文章标题 / 摘要…" aria-label="搜索文章">
+      <div id="tag-filters" class="tag-filters" role="group" aria-label="标签筛选"></div>
+    </section>
+
+    <section>
+      <ul id="post-list" class="post-list"></ul>
+      <p id="empty-tip" class="empty-tip" hidden>没有找到匹配的文章 🤔</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 C1J · 用 ❤️ 和原生三件套搭建</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
